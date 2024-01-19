@@ -1,0 +1,50 @@
+.model {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.model-content {
+    width: 100%;
+    background-color: var(--color-bg-light);
+}
+
+.score,
+.restart {
+    text-align: center;
+}
+
+.store-title,
+.restart-title {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+}
+
+.win-icon {
+    margin-right: 15px;
+}
+
+.score-btn,
+.restart-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.store-title {
+    margin: 30px 0;
+}
+
+.restart-title {
+    margin-bottom: 30px;
+}

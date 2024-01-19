@@ -1,0 +1,70 @@
+.board-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 50px;
+}
+
+.board-turn {
+   border-radius: 8px;
+   background-color: var(--color-bg-light);
+   padding: 8px 12px;
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.board-button {
+   height: 45px;
+   display: flex;
+   align-items: center;
+   transform-origin: center;
+   transition: all 0.3s;
+}
+
+.board-button:active .restart {
+   transform: rotate(180deg);
+}
+
+.board-body {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 25px 20px;
+}
+
+.board-body .card {
+   height: 120px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   padding-inline: 10px;
+}
+
+.board-body .active.shadow-blue {
+   background-color: var(--color-blue);
+}
+
+.board-body .active.shadow-yellow {
+   background-color: var(--color-yellow);
+}
+
+.x-icon {
+   color: var(--color-blue-dark);
+}
+
+.circle-icon {
+   color: var(--color-yellow-dark);
+}
+
+.board-footer {
+   margin-top: 30px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+}
+
+.board-footer .card {
+   gap: 15px;
+}
